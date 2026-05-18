@@ -3,80 +3,148 @@
   "WorkspaceRootPath": "D:\\Projects\\HabitQuest\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\data\\habittemplates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\data\\habittemplates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\viewmodels\\habitsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\viewmodels\\habitsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\data\\badgedefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\data\\badgedefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\views\\habitspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\views\\habitspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\views\\habitspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\views\\habitspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\viewmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\viewmodels\\dashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\services\\habitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\services\\habitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\views\\dashboardpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\views\\dashboardpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\views\\dashboardpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\views\\dashboardpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\interfaces\\idatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\interfaces\\idatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\models\\badge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\models\\badge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\interfaces\\igameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\interfaces\\igameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\viewmodels\\habitsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\viewmodels\\habitsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\interfaces\\ihabitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\interfaces\\ihabitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\models\\earnedbadge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\models\\earnedbadge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\models\\badgedefinition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\models\\badgedefinition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\habitquest.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\habitquest.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\viewmodels\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\viewmodels\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\models\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\models\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\models\\habitlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\models\\habitlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\converters\\booltocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\converters\\booltocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\views\\profilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\views\\profilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\habitquest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\habitquest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\viewmodels\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\viewmodels\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\viewmodels\\habitlibraryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\viewmodels\\habitlibraryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\data\\habittemplates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\data\\habittemplates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\viewmodels\\habititemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\viewmodels\\habititemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\viewmodels\\addedithabitviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\viewmodels\\addedithabitviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\messages\\habitsavedmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\messages\\habitsavedmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\models\\badgedefinition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\models\\badgedefinition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\models\\habit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\models\\habit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\models\\habitlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\models\\habitlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\interfaces\\igameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\interfaces\\igameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\models\\badgecheckcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\models\\badgecheckcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\models\\earnedbadge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\models\\earnedbadge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\models\\badge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\models\\badge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\data\\badgedefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\data\\badgedefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\enums\\badgetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\enums\\badgetrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\services\\habitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\services\\habitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\interfaces\\ihabitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\interfaces\\ihabitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\habitquest.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|solutionrelative:habitquest\\habitquest.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA72AA88-9902-4FB7-9255-BB64B3D8BC01}|HabitQuest\\HabitQuest.csproj|d:\\projects\\habitquest\\habitquest\\enums\\difficulty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -90,31 +158,124 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HabitService.cs",
-              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Services\\HabitService.cs",
-              "RelativeDocumentMoniker": "HabitQuest\\Services\\HabitService.cs",
-              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Services\\HabitService.cs",
-              "RelativeToolTip": "HabitQuest\\Services\\HabitService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAuAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "HabitsPage.xaml.cs",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Views\\HabitsPage.xaml.cs",
+              "RelativeDocumentMoniker": "HabitQuest\\Views\\HabitsPage.xaml.cs",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Views\\HabitsPage.xaml.cs*",
+              "RelativeToolTip": "HabitQuest\\Views\\HabitsPage.xaml.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:12:17.59Z"
+              "WhenOpened": "2026-05-18T14:30:32.213Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GameService.cs",
-              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Services\\GameService.cs",
-              "RelativeDocumentMoniker": "HabitQuest\\Services\\GameService.cs",
-              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Services\\GameService.cs",
-              "RelativeToolTip": "HabitQuest\\Services\\GameService.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAIwGcAAAAWAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "DashboardViewModel.cs",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\ViewModels\\DashboardViewModel.cs",
+              "RelativeDocumentMoniker": "HabitQuest\\ViewModels\\DashboardViewModel.cs",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\ViewModels\\DashboardViewModel.cs",
+              "RelativeToolTip": "HabitQuest\\ViewModels\\DashboardViewModel.cs",
+              "ViewState": "AgIAABYAAAAA0IHwTs/lvygAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:12:23.392Z"
+              "WhenOpened": "2026-05-15T12:12:41.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HabitsPage.xaml",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Views\\HabitsPage.xaml",
+              "RelativeDocumentMoniker": "HabitQuest\\Views\\HabitsPage.xaml",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Views\\HabitsPage.xaml",
+              "RelativeToolTip": "HabitQuest\\Views\\HabitsPage.xaml",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAGoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-18T11:22:40.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IDatabaseService.cs",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Interfaces\\IDatabaseService.cs",
+              "RelativeDocumentMoniker": "HabitQuest\\Interfaces\\IDatabaseService.cs",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Interfaces\\IDatabaseService.cs",
+              "RelativeToolTip": "HabitQuest\\Interfaces\\IDatabaseService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T12:11:42.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\AppShell.xaml",
+              "RelativeDocumentMoniker": "HabitQuest\\AppShell.xaml",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\AppShell.xaml",
+              "RelativeToolTip": "HabitQuest\\AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-18T11:17:53.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\App.xaml.cs",
+              "RelativeDocumentMoniker": "HabitQuest\\App.xaml.cs",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\App.xaml.cs",
+              "RelativeToolTip": "HabitQuest\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T11:16:26.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\App.xaml",
+              "RelativeDocumentMoniker": "HabitQuest\\App.xaml",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\App.xaml",
+              "RelativeToolTip": "HabitQuest\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-18T11:22:06.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DashboardPage.xaml",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Views\\DashboardPage.xaml",
+              "RelativeDocumentMoniker": "HabitQuest\\Views\\DashboardPage.xaml",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Views\\DashboardPage.xaml",
+              "RelativeToolTip": "HabitQuest\\Views\\DashboardPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-18T11:21:52.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Models\\UserProfile.cs",
+              "RelativeDocumentMoniker": "HabitQuest\\Models\\UserProfile.cs",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Models\\UserProfile.cs",
+              "RelativeToolTip": "HabitQuest\\Models\\UserProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T12:13:31.025Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -124,153 +285,72 @@
               "RelativeDocumentMoniker": "HabitQuest\\Services\\DatabaseService.cs",
               "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Services\\DatabaseService.cs",
               "RelativeToolTip": "HabitQuest\\Services\\DatabaseService.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwDgAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:12:11.843Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DashboardViewModel.cs",
-              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\ViewModels\\DashboardViewModel.cs",
-              "RelativeDocumentMoniker": "HabitQuest\\ViewModels\\DashboardViewModel.cs",
-              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\ViewModels\\DashboardViewModel.cs",
-              "RelativeToolTip": "HabitQuest\\ViewModels\\DashboardViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:12:41.33Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HabitTemplates.cs",
-              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Data\\HabitTemplates.cs",
-              "RelativeDocumentMoniker": "HabitQuest\\Data\\HabitTemplates.cs",
-              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Data\\HabitTemplates.cs",
-              "RelativeToolTip": "HabitQuest\\Data\\HabitTemplates.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:32:52.217Z",
+              "WhenOpened": "2026-05-15T12:12:11.843Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BadgeDefinitions.cs",
-              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Data\\BadgeDefinitions.cs",
-              "RelativeDocumentMoniker": "HabitQuest\\Data\\BadgeDefinitions.cs",
-              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Data\\BadgeDefinitions.cs",
-              "RelativeToolTip": "HabitQuest\\Data\\BadgeDefinitions.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAQwDsAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "BoolToColorConverter.cs",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Converters\\BoolToColorConverter.cs",
+              "RelativeDocumentMoniker": "HabitQuest\\Converters\\BoolToColorConverter.cs",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Converters\\BoolToColorConverter.cs",
+              "RelativeToolTip": "HabitQuest\\Converters\\BoolToColorConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:36:05.499Z"
+              "WhenOpened": "2026-05-18T11:26:37.2Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IDatabaseService.cs",
-              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Interfaces\\IDatabaseService.cs",
-              "RelativeDocumentMoniker": "HabitQuest\\Interfaces\\IDatabaseService.cs",
-              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Interfaces\\IDatabaseService.cs",
-              "RelativeToolTip": "HabitQuest\\Interfaces\\IDatabaseService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "HabitQuest\\AppShell.xaml.cs",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\AppShell.xaml.cs",
+              "RelativeToolTip": "HabitQuest\\AppShell.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:11:42.837Z"
+              "WhenOpened": "2026-05-18T11:22:53.777Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Badge.cs",
-              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Models\\Badge.cs",
-              "RelativeDocumentMoniker": "HabitQuest\\Models\\Badge.cs",
-              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Models\\Badge.cs",
-              "RelativeToolTip": "HabitQuest\\Models\\Badge.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:41:25.489Z"
+              "DocumentIndex": 15,
+              "Title": "ProfilePage.xaml",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Views\\ProfilePage.xaml",
+              "RelativeDocumentMoniker": "HabitQuest\\Views\\ProfilePage.xaml",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Views\\ProfilePage.xaml",
+              "RelativeToolTip": "HabitQuest\\Views\\ProfilePage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-18T11:22:47.728Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "HabitsViewModel.cs",
               "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\ViewModels\\HabitsViewModel.cs",
               "RelativeDocumentMoniker": "HabitQuest\\ViewModels\\HabitsViewModel.cs",
               "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\ViewModels\\HabitsViewModel.cs",
               "RelativeToolTip": "HabitQuest\\ViewModels\\HabitsViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwD4AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:12:49.931Z"
+              "WhenOpened": "2026-05-15T12:12:49.931Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IHabitService.cs",
-              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Interfaces\\IHabitService.cs",
-              "RelativeDocumentMoniker": "HabitQuest\\Interfaces\\IHabitService.cs",
-              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Interfaces\\IHabitService.cs",
-              "RelativeToolTip": "HabitQuest\\Interfaces\\IHabitService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "DashboardPage.xaml.cs",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Views\\DashboardPage.xaml.cs",
+              "RelativeDocumentMoniker": "HabitQuest\\Views\\DashboardPage.xaml.cs",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Views\\DashboardPage.xaml.cs",
+              "RelativeToolTip": "HabitQuest\\Views\\DashboardPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:11:51.62Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "EarnedBadge.cs",
-              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Models\\EarnedBadge.cs",
-              "RelativeDocumentMoniker": "HabitQuest\\Models\\EarnedBadge.cs",
-              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Models\\EarnedBadge.cs",
-              "RelativeToolTip": "HabitQuest\\Models\\EarnedBadge.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:34:36.37Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "BadgeDefinition.cs",
-              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Models\\BadgeDefinition.cs",
-              "RelativeDocumentMoniker": "HabitQuest\\Models\\BadgeDefinition.cs",
-              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Models\\BadgeDefinition.cs",
-              "RelativeToolTip": "HabitQuest\\Models\\BadgeDefinition.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:13:23.332Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "HabitQuest",
-              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\HabitQuest.csproj",
-              "RelativeDocumentMoniker": "HabitQuest\\HabitQuest.csproj",
-              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\HabitQuest.csproj",
-              "RelativeToolTip": "HabitQuest\\HabitQuest.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-15T12:30:40.28Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ProfileViewModel.cs",
-              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\ViewModels\\ProfileViewModel.cs",
-              "RelativeDocumentMoniker": "HabitQuest\\ViewModels\\ProfileViewModel.cs",
-              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\ViewModels\\ProfileViewModel.cs",
-              "RelativeToolTip": "HabitQuest\\ViewModels\\ProfileViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:13:01.13Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IGameService.cs",
-              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Interfaces\\IGameService.cs",
-              "RelativeDocumentMoniker": "HabitQuest\\Interfaces\\IGameService.cs",
-              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Interfaces\\IGameService.cs",
-              "RelativeToolTip": "HabitQuest\\Interfaces\\IGameService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:12:00.612Z"
+              "WhenOpened": "2026-05-18T11:32:42.066Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -280,37 +360,109 @@
               "RelativeDocumentMoniker": "HabitQuest\\MauiProgram.cs",
               "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\MauiProgram.cs",
               "RelativeToolTip": "HabitQuest\\MauiProgram.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-15T12:26:53.355Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "UserProfile.cs",
-              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Models\\UserProfile.cs",
-              "RelativeDocumentMoniker": "HabitQuest\\Models\\UserProfile.cs",
-              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Models\\UserProfile.cs",
-              "RelativeToolTip": "HabitQuest\\Models\\UserProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:13:31.025Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "HabitLog.cs",
-              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Models\\HabitLog.cs",
-              "RelativeDocumentMoniker": "HabitQuest\\Models\\HabitLog.cs",
-              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Models\\HabitLog.cs",
-              "RelativeToolTip": "HabitQuest\\Models\\HabitLog.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:13:18.15Z"
+              "Title": "HabitQuest.csproj",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\HabitQuest.csproj",
+              "RelativeDocumentMoniker": "HabitQuest\\HabitQuest.csproj",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\HabitQuest.csproj",
+              "RelativeToolTip": "HabitQuest\\HabitQuest.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-18T11:19:00.717Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
+              "Title": "HabitLibraryViewModel.cs",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\ViewModels\\HabitLibraryViewModel.cs",
+              "RelativeDocumentMoniker": "HabitQuest\\ViewModels\\HabitLibraryViewModel.cs",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\ViewModels\\HabitLibraryViewModel.cs",
+              "RelativeToolTip": "HabitQuest\\ViewModels\\HabitLibraryViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T11:11:32.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ProfileViewModel.cs",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\ViewModels\\ProfileViewModel.cs",
+              "RelativeDocumentMoniker": "HabitQuest\\ViewModels\\ProfileViewModel.cs",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\ViewModels\\ProfileViewModel.cs",
+              "RelativeToolTip": "HabitQuest\\ViewModels\\ProfileViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T12:13:01.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "HabitItemViewModel.cs",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\ViewModels\\HabitItemViewModel.cs",
+              "RelativeDocumentMoniker": "HabitQuest\\ViewModels\\HabitItemViewModel.cs",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\ViewModels\\HabitItemViewModel.cs",
+              "RelativeToolTip": "HabitQuest\\ViewModels\\HabitItemViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T10:16:42.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AddEditHabitViewModel.cs",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\ViewModels\\AddEditHabitViewModel.cs",
+              "RelativeDocumentMoniker": "HabitQuest\\ViewModels\\AddEditHabitViewModel.cs",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\ViewModels\\AddEditHabitViewModel.cs",
+              "RelativeToolTip": "HabitQuest\\ViewModels\\AddEditHabitViewModel.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAmwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T11:03:42.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "HabitTemplates.cs",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Data\\HabitTemplates.cs",
+              "RelativeDocumentMoniker": "HabitQuest\\Data\\HabitTemplates.cs",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Data\\HabitTemplates.cs",
+              "RelativeToolTip": "HabitQuest\\Data\\HabitTemplates.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T12:32:52.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "HabitSavedMessage.cs",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Messages\\HabitSavedMessage.cs",
+              "RelativeDocumentMoniker": "HabitQuest\\Messages\\HabitSavedMessage.cs",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Messages\\HabitSavedMessage.cs",
+              "RelativeToolTip": "HabitQuest\\Messages\\HabitSavedMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T11:07:11.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "BadgeDefinition.cs",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Models\\BadgeDefinition.cs",
+              "RelativeDocumentMoniker": "HabitQuest\\Models\\BadgeDefinition.cs",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Models\\BadgeDefinition.cs",
+              "RelativeToolTip": "HabitQuest\\Models\\BadgeDefinition.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T12:13:23.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "Habit.cs",
               "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Models\\Habit.cs",
               "RelativeDocumentMoniker": "HabitQuest\\Models\\Habit.cs",
@@ -322,7 +474,138 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
+              "Title": "HabitLog.cs",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Models\\HabitLog.cs",
+              "RelativeDocumentMoniker": "HabitQuest\\Models\\HabitLog.cs",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Models\\HabitLog.cs",
+              "RelativeToolTip": "HabitQuest\\Models\\HabitLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T12:13:18.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "GameService.cs",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Services\\GameService.cs",
+              "RelativeDocumentMoniker": "HabitQuest\\Services\\GameService.cs",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Services\\GameService.cs",
+              "RelativeToolTip": "HabitQuest\\Services\\GameService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T12:12:23.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IGameService.cs",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Interfaces\\IGameService.cs",
+              "RelativeDocumentMoniker": "HabitQuest\\Interfaces\\IGameService.cs",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Interfaces\\IGameService.cs",
+              "RelativeToolTip": "HabitQuest\\Interfaces\\IGameService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T12:12:00.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "BadgeCheckContext.cs",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Models\\BadgeCheckContext.cs",
+              "RelativeDocumentMoniker": "HabitQuest\\Models\\BadgeCheckContext.cs",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Models\\BadgeCheckContext.cs",
+              "RelativeToolTip": "HabitQuest\\Models\\BadgeCheckContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T09:57:44.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "EarnedBadge.cs",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Models\\EarnedBadge.cs",
+              "RelativeDocumentMoniker": "HabitQuest\\Models\\EarnedBadge.cs",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Models\\EarnedBadge.cs",
+              "RelativeToolTip": "HabitQuest\\Models\\EarnedBadge.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T12:34:36.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Badge.cs",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Models\\Badge.cs",
+              "RelativeDocumentMoniker": "HabitQuest\\Models\\Badge.cs",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Models\\Badge.cs",
+              "RelativeToolTip": "HabitQuest\\Models\\Badge.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T12:41:25.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "BadgeDefinitions.cs",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Data\\BadgeDefinitions.cs",
+              "RelativeDocumentMoniker": "HabitQuest\\Data\\BadgeDefinitions.cs",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Data\\BadgeDefinitions.cs",
+              "RelativeToolTip": "HabitQuest\\Data\\BadgeDefinitions.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAIwDoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T12:36:05.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "BadgeTrigger.cs",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Enums\\BadgeTrigger.cs",
+              "RelativeDocumentMoniker": "HabitQuest\\Enums\\BadgeTrigger.cs",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Enums\\BadgeTrigger.cs",
+              "RelativeToolTip": "HabitQuest\\Enums\\BadgeTrigger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-18T10:00:35.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "HabitService.cs",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Services\\HabitService.cs",
+              "RelativeDocumentMoniker": "HabitQuest\\Services\\HabitService.cs",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Services\\HabitService.cs",
+              "RelativeToolTip": "HabitQuest\\Services\\HabitService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T12:12:17.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "IHabitService.cs",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Interfaces\\IHabitService.cs",
+              "RelativeDocumentMoniker": "HabitQuest\\Interfaces\\IHabitService.cs",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\Interfaces\\IHabitService.cs",
+              "RelativeToolTip": "HabitQuest\\Interfaces\\IHabitService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T12:11:51.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "HabitQuest",
+              "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\HabitQuest.csproj",
+              "RelativeDocumentMoniker": "HabitQuest\\HabitQuest.csproj",
+              "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\HabitQuest.csproj",
+              "RelativeToolTip": "HabitQuest\\HabitQuest.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-15T12:30:40.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
               "Title": "Difficulty.cs",
               "DocumentMoniker": "D:\\Projects\\HabitQuest\\HabitQuest\\Enums\\Difficulty.cs",
               "RelativeDocumentMoniker": "HabitQuest\\Enums\\Difficulty.cs",

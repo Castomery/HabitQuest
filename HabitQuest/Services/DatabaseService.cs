@@ -25,7 +25,7 @@ namespace HabitQuest.Services
             await _db.CreateTableAsync<Habit>();
             await _db.CreateTableAsync<HabitLog>();
             await _db.CreateTableAsync<UserProfile>();
-            await _db.CreateTableAsync<BadgeDefinition>();
+            await _db.CreateTableAsync<EarnedBadge>();
 
             var profile = await _db.FindAsync<UserProfile>(1);
             if (profile is null)

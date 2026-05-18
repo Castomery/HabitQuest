@@ -6,12 +6,14 @@ using System.Text;
 using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using CommunityToolkit.Mvvm.Messaging;
 using HabitQuest.Interfaces;
+using HabitQuest.Messages;
 using HabitQuest.Models;
 
 namespace HabitQuest.ViewModels
 {
-    public partial class HabitsViewModel : ObservableObject
+    public partial class HabitsViewModel : ObservableObject, IRecipient<HabitSavedMessage>
     {
         private readonly IHabitService _habitService;
 
@@ -27,6 +29,7 @@ namespace HabitQuest.ViewModels
         public HabitsViewModel(IHabitService habitService)
         {
             _habitService = habitService;
+            WeakReferenceMessenger.Default.Register(this);
         }
 
         [RelayCommand]
@@ -61,7 +64,32 @@ namespace HabitQuest.ViewModels
         }
 
         [RelayCommand]
-        public async Task HabitSavedAsync(Habit habit)
+        public async Task AddHabitAsync()
+        {
+            var result = await Shell.Current.DisplayActionSheet(
+                "Як додати звичку?",
+                "Скасувати",
+                null,
+                "📚 З бібліотеки",
+                "✏️ Власна звичка");
+
+            if (result == "📚 З бібліотеки")
+            {
+                // TODO: відкрити бібліотеку
+            }
+            else if (result == "✏️ Власна звичка")
+            {
+                // TODO: відкрити форму
+            }
+        }
+
+        //[RelayCommand]
+        //public async Task HabitSavedAsync(Habit habit)
+        //{
+        //    await LoadAsync();
+        //}
+
+        public async void Receive(HabitSavedMessage message)
         {
             await LoadAsync();
         }

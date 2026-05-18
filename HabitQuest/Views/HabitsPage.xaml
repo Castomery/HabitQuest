@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HabitQuest.Views.HabitsPage"
+             xmlns:vm="clr-namespace:HabitQuest.ViewModels"
+             x:DataType="vm:HabitsViewModel"
+             Shell.NavBarIsVisible="False">
+    
+    <Grid RowDefinitions="Auto,*,Auto">
+
+        <VerticalStackLayout
+            Grid.Row="0"
+            BackgroundColor="#6C63FF"
+            Padding="20,50,20,20">
+            <Label
+                Text="Мої звички"
+                FontSize="28"
+                FontAttributes="Bold"
+                TextColor="White"/>
+        </VerticalStackLayout>
+
+        <ScrollView Grid.Row="1" Padding="20,16,20,0">
+            <VerticalStackLayout Spacing="0">
+
+                <VerticalStackLayout
+                    IsVisible="{Binding IsEmpty}"
+                    Spacing="8"
+                    Padding="0,80,0,0">
+                    <Label
+                        Text="📋"
+                        FontSize="48"
+                        HorizontalOptions="Center"/>
+                    <Label
+                        Text="Ще немає звичок"
+                        FontSize="18"
+                        FontAttributes="Bold"
+                        TextColor="#1A1A2E"
+                        HorizontalOptions="Center"/>
+                    <Label
+                        Text="Натисни + щоб додати першу звичку"
+                        FontSize="14"
+                        TextColor="#888"
+                        HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+
+                <CollectionView
+                    ItemsSource="{Binding Habits}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="vm:HabitItemViewModel">
+                            <Border
+                                Margin="0,0,0,10"
+                                Padding="16"
+                                BackgroundColor="White"
+                                StrokeThickness="1"
+                                Stroke="#F0F0F0">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="16"/>
+                                </Border.StrokeShape>
+                                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="12">
+
+                                    <Label
+                                        Grid.Column="0"
+                                        Text="{Binding CategoryIcon}"
+                                        FontSize="28"
+                                        VerticalOptions="Center"/>
+
+                                    <VerticalStackLayout
+                                        Grid.Column="1"
+                                        Spacing="2"
+                                        VerticalOptions="Center">
+                                        <Label
+                                            Text="{Binding Name}"
+                                            FontSize="16"
+                                            FontAttributes="Bold"
+                                            TextColor="#1A1A2E"/>
+                                        <Label
+                                            Text="{Binding DifficultyLabel}"
+                                            FontSize="12"
+                                            TextColor="#888"/>
+                                    </VerticalStackLayout>
+
+                                    <Button
+                                        Grid.Column="2"
+                                        Text="🗑️"
+                                        FontSize="18"
+                                        BackgroundColor="Transparent"
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type vm:HabitsViewModel}}, Path=DeleteHabitCommand}"
+                                        CommandParameter="{Binding .}"
+                                        VerticalOptions="Center"/>
+
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <Border
+            Grid.Row="2"
+            Padding="20,12,20,30"
+            BackgroundColor="White"
+            StrokeThickness="0">
+            <Button
+                Text="+ Додати звичку"
+                BackgroundColor="#6C63FF"
+                TextColor="White"
+                FontSize="16"
+                FontAttributes="Bold"
+                HeightRequest="54"
+                CornerRadius="27"
+                Command="{Binding AddHabitCommand}"/>
+        </Border>
+
+    </Grid>
+</ContentPage>

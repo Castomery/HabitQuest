@@ -85,6 +85,21 @@ namespace HabitQuest.ViewModels
             }
         }
 
+        public string LevelTitle => Profile.Level switch
+        {
+            1 => "Новачок 🌱",
+            2 => "Учень 📖",
+            3 => "Практик 💪",
+            4 => "Майстер ⚔️",
+            5 => "Легенда 👑",
+            _ => string.Empty
+        };
+
+        partial void OnProfileChanged(UserProfile value)
+        {
+            OnPropertyChanged(nameof(LevelTitle));
+        }
+
         private string GetGreeting()
         {
             var hour = DateTime.Now.Hour;

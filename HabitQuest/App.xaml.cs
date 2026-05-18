@@ -1,15 +1,20 @@
-﻿namespace HabitQuest
+﻿
+using HabitQuest.Interfaces;
+
+namespace HabitQuest
 {
     public partial class App : Application
     {
-        public App()
+        public App(IDatabaseService databaseService)
         {
             InitializeComponent();
+            InitializeDatabaseAsync(databaseService).ConfigureAwait(false);
+            MainPage = new AppShell();
         }
 
-        protected override Window CreateWindow(IActivationState? activationState)
+        private static async Task InitializeDatabaseAsync(IDatabaseService databaseService)
         {
-            return new Window(new AppShell());
+            await databaseService.InitAsync();
         }
     }
 }

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HabitQuest.Views.DashboardPage"
+             xmlns:vm="clr-namespace:HabitQuest.ViewModels"
+             xmlns:models="clr-namespace:HabitQuest.Models"
+             xmlns:converters="clr-namespace:HabitQuest.Converters"
+             x:DataType="vm:DashboardViewModel">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="0">
+
+            <VerticalStackLayout
+                BackgroundColor="#6C63FF"
+                Padding="20,50,20,30"
+                Spacing="12">
+
+                <Label
+                    Text="{Binding GreetingMessage}"
+                    TextColor="White"
+                    FontSize="16"
+                    HorizontalOptions="Center"/>
+
+                <Border
+                    HeightRequest="90"
+                    WidthRequest="90"
+                    HorizontalOptions="Center"
+                    BackgroundColor="#5A52E0"
+                    StrokeThickness="0">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="45"/>
+                    </Border.StrokeShape>
+                    <Label
+                        Text="{Binding Profile.Level, StringFormat='{0}'}"
+                        FontSize="40"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"/>
+                </Border>
+
+                <Label
+                    Text="{Binding LevelTitle}"
+                    TextColor="White"
+                    FontSize="18"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"/>
+
+                <VerticalStackLayout Spacing="4">
+                    <Label
+                        TextColor="#E0DEFF"
+                        FontSize="13"
+                        HorizontalOptions="Center">
+                        <Label.Text>
+                            <MultiBinding StringFormat="{}{0} / {1} XP">
+                                <Binding Path="Profile.TotalXp"/>
+                                <Binding Path="Profile.XpForNextLevel"/>
+                            </MultiBinding>
+                        </Label.Text>
+                    </Label>
+                    <ProgressBar
+                        Progress="{Binding Profile.LevelProgress}"
+                        ProgressColor="White"
+                        BackgroundColor="#5A52E0"
+                        HeightRequest="8"/>
+                </VerticalStackLayout>
+
+                <Border
+                    BackgroundColor="#5A52E0"
+                    Padding="16,8"
+                    HorizontalOptions="Center"
+                    StrokeThickness="0">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Label
+                        TextColor="White"
+                        FontSize="14">
+                        <Label.Text>
+                            <MultiBinding StringFormat="🔥 Streak: {0} днів">
+                                <Binding Path="Profile.CurrentStreak"/>
+                            </MultiBinding>
+                        </Label.Text>
+                    </Label>
+                </Border>
+
+            </VerticalStackLayout>
+
+
+            <VerticalStackLayout Padding="20,24,20,20" Spacing="16">
+                <Label
+                    Text="Звички на сьогодні"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    TextColor="#1A1A2E"/>
+
+                <VerticalStackLayout
+                    IsVisible="{Binding IsEmpty}"
+                    Spacing="8"
+                    Padding="0,40,0,0">
+                    <Label
+                        Text="🎯"
+                        FontSize="48"
+                        HorizontalOptions="Center"/>
+                    <Label
+                        Text="Немає звичок на сьогодні"
+                        FontSize="16"
+                        TextColor="#888"
+                        HorizontalOptions="Center"/>
+                    <Label
+                        Text="Додай звички на вкладці Звички"
+                        FontSize="13"
+                        TextColor="#AAA"
+                        HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+
+                <CollectionView
+                    ItemsSource="{Binding TodayHabits}"
+                    IsVisible="{Binding IsEmpty, Converter={StaticResource InvertedBoolConverter}}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="vm:HabitItemViewModel">
+                            <Border
+                                Margin="0,0,0,10"
+                                Padding="16"
+                                BackgroundColor="White"
+                                StrokeThickness="1"
+                                Stroke="#F0F0F0">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="16"/>
+                                </Border.StrokeShape>
+                                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="12">
+
+                                    <Label
+                                        Grid.Column="0"
+                                        Text="{Binding CategoryIcon}"
+                                        FontSize="28"
+                                        VerticalOptions="Center"/>
+
+                                    <VerticalStackLayout Grid.Column="1" Spacing="2" VerticalOptions="Center">
+                                        <Label
+                                            Text="{Binding Name}"
+                                            FontSize="16"
+                                            FontAttributes="Bold"
+                                            TextColor="#1A1A2E"/>
+                                        <Label
+                                            Text="{Binding DifficultyLabel}"
+                                            FontSize="12"
+                                            TextColor="#888"/>
+                                    </VerticalStackLayout>
+
+                                    <Border
+                                        Grid.Column="2"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        VerticalOptions="Center"
+                                        StrokeThickness="0">
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="20"/>
+                                        </Border.StrokeShape>
+                                        <Border.BackgroundColor>
+                                            <Binding Path="IsCompleted">
+                                                <Binding.Converter>
+                                                    <converters:BoolToColorConverter
+                                                        TrueColor="#6C63FF"
+                                                        FalseColor="#F0F0F0"/>
+                                                </Binding.Converter>
+                                            </Binding>
+                                        </Border.BackgroundColor>
+                                        <Label
+                                            Text="✓"
+                                            FontSize="18"
+                                            TextColor="{Binding IsCompleted, Converter={StaticResource BoolToTextColorConverter}}"
+                                            HorizontalOptions="Center"
+                                            VerticalOptions="Center"/>
+                                        <Border.GestureRecognizers>
+                                            <TapGestureRecognizer
+                                                Command="{Binding Source={RelativeSource AncestorType={x:Type vm:DashboardViewModel}}, Path=CompleteHabitCommand}"
+                                                CommandParameter="{Binding .}"/>
+                                        </Border.GestureRecognizers>
+                                    </Border>
+
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
