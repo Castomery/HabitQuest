@@ -11,6 +11,8 @@ namespace HabitQuest.Models
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
+        
+        [Indexed]
         public string BadgeKey { get; set; } = string.Empty;
         public DateTime EarnedAt { get; set; } = DateTime.Now;
     }

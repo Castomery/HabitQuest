@@ -102,8 +102,7 @@
               "RelativeToolTip": "HabitQuest\\Services\\HabitService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:12:17.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-15T12:12:17.59Z"
             },
             {
               "$type": "Document",
@@ -115,8 +114,7 @@
               "RelativeToolTip": "HabitQuest\\Services\\GameService.cs",
               "ViewState": "AgIAADkAAAAAAAAAAAAIwGcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:12:23.392Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-15T12:12:23.392Z"
             },
             {
               "$type": "Document",
@@ -128,8 +126,7 @@
               "RelativeToolTip": "HabitQuest\\Services\\DatabaseService.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAgwDgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:12:11.843Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-15T12:12:11.843Z"
             },
             {
               "$type": "Document",
@@ -141,8 +138,7 @@
               "RelativeToolTip": "HabitQuest\\ViewModels\\DashboardViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:12:41.33Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-15T12:12:41.33Z"
             },
             {
               "$type": "Document",
@@ -167,8 +163,7 @@
               "RelativeToolTip": "HabitQuest\\Data\\BadgeDefinitions.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAQwDsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:36:05.499Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-15T12:36:05.499Z"
             },
             {
               "$type": "Document",
@@ -180,8 +175,7 @@
               "RelativeToolTip": "HabitQuest\\Interfaces\\IDatabaseService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:11:42.837Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-15T12:11:42.837Z"
             },
             {
               "$type": "Document",
@@ -193,8 +187,7 @@
               "RelativeToolTip": "HabitQuest\\Models\\Badge.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:41:25.489Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-15T12:41:25.489Z"
             },
             {
               "$type": "Document",
@@ -206,8 +199,7 @@
               "RelativeToolTip": "HabitQuest\\ViewModels\\HabitsViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:12:49.931Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-15T12:12:49.931Z"
             },
             {
               "$type": "Document",
@@ -219,8 +211,7 @@
               "RelativeToolTip": "HabitQuest\\Interfaces\\IHabitService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:11:51.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-15T12:11:51.62Z"
             },
             {
               "$type": "Document",
@@ -232,8 +223,7 @@
               "RelativeToolTip": "HabitQuest\\Models\\EarnedBadge.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:34:36.37Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-15T12:34:36.37Z"
             },
             {
               "$type": "Document",
@@ -245,8 +235,7 @@
               "RelativeToolTip": "HabitQuest\\Models\\BadgeDefinition.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:13:23.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-15T12:13:23.332Z"
             },
             {
               "$type": "Document",
@@ -257,8 +246,7 @@
               "ToolTip": "D:\\Projects\\HabitQuest\\HabitQuest\\HabitQuest.csproj",
               "RelativeToolTip": "HabitQuest\\HabitQuest.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-15T12:30:40.28Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-15T12:30:40.28Z"
             },
             {
               "$type": "Document",
@@ -282,8 +270,7 @@
               "RelativeToolTip": "HabitQuest\\Interfaces\\IGameService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-15T12:12:00.612Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-15T12:12:00.612Z"
             },
             {
               "$type": "Document",

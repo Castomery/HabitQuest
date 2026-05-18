@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HabitQuest.Data;
+using HabitQuest.Enums;
 using HabitQuest.Interfaces;
 using HabitQuest.Models;
 
@@ -12,16 +13,18 @@ namespace HabitQuest.Services
     public class GameService : IGameService
     {
         private readonly IDatabaseService _db;
+        private readonly IHabitService _habitService;
 
-        public GameService(IDatabaseService db)
+        public GameService(IDatabaseService db, IHabitService habitService)
         {
             _db = db;
+            _habitService = habitService;
         }
 
         public Task<UserProfile> GetProfileAsync() =>
         _db.GetProfileAsync();
 
-        public async Task<(int xpEarned, bool leveledUp)> CompleteHabitAsync(Habit habit)
+        public async Task<(int xpEarned, bool leveledUp, List<Badge> newBadges)> CompleteHabitAsync(Habit habit)
         {
             var profile = await _db.GetProfileAsync();
             var levelBefore = profile.Level;
@@ -36,25 +39,33 @@ namespace HabitQuest.Services
 
             profile.TotalXp += habit.XpReward;
 
-            await UpdateStreakAsync(profile);
+            var streakUpdated = await UpdateStreakAsync(profile);
 
             await _db.SaveProfileAsync(profile);
 
-            await CheckBadgesAsync(profile);
-
             var leveledUp = profile.Level > levelBefore;
-            return (habit.XpReward, leveledUp);
+
+            var newBadges = new List<Badge>();
+            newBadges.AddRange(await CheckBadgesAsync(profile, BadgeTrigger.OnHabitCompleted));
+
+            if (streakUpdated)
+                newBadges.AddRange(await CheckBadgesAsync(profile, BadgeTrigger.OnStreakUpdated));
+
+            if (leveledUp)
+                newBadges.AddRange(await CheckBadgesAsync(profile, BadgeTrigger.OnLevelUp));
+
+            return (habit.XpReward, leveledUp, newBadges);
         }
 
-        
 
-        private async Task UpdateStreakAsync(UserProfile profile)
+
+        private async Task<bool> UpdateStreakAsync(UserProfile profile)
         {
             var today = DateTime.Today;
             var lastDate = profile.LastCompletedDate.Date;
 
             if (lastDate == today)
-                return;
+                return false;
 
             if (lastDate == today.AddDays(-1))
                 profile.CurrentStreak++;
@@ -65,24 +76,45 @@ namespace HabitQuest.Services
                 profile.LongestStreak = profile.CurrentStreak;
 
             profile.LastCompletedDate = today;
+            return true;
         }
 
-        private async Task CheckBadgesAsync(UserProfile profile)
+        private async Task<List<Badge>> CheckBadgesAsync(UserProfile profile,BadgeTrigger trigger)
         {
-            var logs = await _db.GetLogsForTodayAsync();
-            var allLogs = await _db.GetAllLogsAsync();
+            var earnedKeys = (await _db.GetEarnedBadgesAsync())
+                .Select(b => b.BadgeKey)
+                .ToHashSet();
 
-            await TryAwardBadgeAsync("first_habit", allLogs.Count >= 1);
-            await TryAwardBadgeAsync("habits_10", allLogs.Count >= 10);
-            await TryAwardBadgeAsync("habits_50", allLogs.Count >= 50);
-            await TryAwardBadgeAsync("habits_100", allLogs.Count >= 100);
+            var candidates = BadgeDefinitions.All
+                .Where(b => b.Trigger == trigger && !earnedKeys.Contains(b.Key))
+                .ToList();
 
-            await TryAwardBadgeAsync("streak_3", profile.CurrentStreak >= 3);
-            await TryAwardBadgeAsync("streak_7", profile.CurrentStreak >= 7);
-            await TryAwardBadgeAsync("streak_30", profile.CurrentStreak >= 30);
+            if (!candidates.Any()) return new List<Badge>();
 
-            await TryAwardBadgeAsync("level_2", profile.Level >= 2);
-            await TryAwardBadgeAsync("level_5", profile.Level >= 5);
+            var context = await BuildContextAsync();
+            var newBadges = new List<Badge>();
+
+            foreach (var badge in candidates)
+            {
+                if (badge.Condition(context))
+                {
+                    await _db.SaveEarnedBadgeAsync(new EarnedBadge
+                    {
+                        BadgeKey = badge.Key,
+                        EarnedAt = DateTime.Now
+                    });
+
+                    newBadges.Add(new Badge
+                    {
+                        Definition = badge,
+                        IsEarned = true,
+                        EarnedAt = DateTime.Now,
+                        Progress = 1.0
+                    });
+                }
+            }
+
+            return newBadges;
         }
 
         private async Task TryAwardBadgeAsync(string key, bool condition)
@@ -98,15 +130,39 @@ namespace HabitQuest.Services
         }
         public async Task<List<Badge>> GetBadgesAsync()
         {
-            var earned = await _db.GetEarnedBadgesAsync();
-            var earnedKeys = earned.Select(e => e.BadgeKey).ToHashSet();
+            var earnedKeys = (await _db.GetEarnedBadgesAsync())
+                .ToDictionary(b => b.BadgeKey, b => b.EarnedAt);
+
+            var context = await BuildContextAsync();
 
             return BadgeDefinitions.All.Select(def => new Badge
             {
                 Definition = def,
-                IsEarned = earnedKeys.Contains(def.Key),
-                EarnedAt = earned.FirstOrDefault(e => e.BadgeKey == def.Key)?.EarnedAt
+                IsEarned = earnedKeys.ContainsKey(def.Key),
+                EarnedAt = earnedKeys.GetValueOrDefault(def.Key),
+                Progress = def.Progress(context)
             }).ToList();
+        }
+
+        private async Task<BadgeCheckContext> BuildContextAsync()
+        {
+            var profile = await _db.GetProfileAsync();
+            var todayHabits = await _habitService.GetTodayHabitsAsync();
+            var todayLogs = await _db.GetLogsForTodayAsync();
+            var completedToday = todayLogs.Select(l => l.HabitId).ToHashSet();
+            var completedCount = todayHabits.Count(h => completedToday.Contains(h.Id));
+
+            return new BadgeCheckContext
+            {
+                TotalLogsCount = await _db.GetTotalLogsCountAsync(),
+                CurrentStreak = profile.CurrentStreak,
+                Level = profile.Level,
+                AllTodayHabitsCompleted = todayHabits.Count > 0 &&
+                                          completedCount == todayHabits.Count,
+                TodayCompletionRate = todayHabits.Count == 0 ? 0 :
+                                      (double)completedCount / todayHabits.Count,
+                PerfectDaysStreak = profile.CurrentStreak
+            };
         }
     }
 }

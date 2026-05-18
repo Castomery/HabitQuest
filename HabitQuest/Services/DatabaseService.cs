@@ -56,6 +56,8 @@ namespace HabitQuest.Services
                .ToListAsync();
         public Task<List<HabitLog>> GetAllLogsAsync() =>
         _db.Table<HabitLog>().ToListAsync();
+        public Task<int> GetTotalLogsCountAsync() =>
+        _db.Table<HabitLog>().CountAsync();
 
 
         public Task<UserProfile> GetProfileAsync() =>

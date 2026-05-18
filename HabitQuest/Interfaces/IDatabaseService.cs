@@ -19,6 +19,7 @@ namespace HabitQuest.Interfaces
         Task<List<HabitLog>> GetLogsForTodayAsync();
         Task<List<HabitLog>> GetLogsForHabitAsync(int habitId);
         Task<List<HabitLog>> GetAllLogsAsync();
+        Task<int> GetTotalLogsCountAsync();
 
         Task<UserProfile> GetProfileAsync();
         Task<int> SaveProfileAsync(UserProfile profile);

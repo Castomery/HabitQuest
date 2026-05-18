@@ -10,7 +10,7 @@ namespace HabitQuest.Interfaces
     public interface IGameService
     {
         Task<UserProfile> GetProfileAsync();
-        Task<(int xpEarned, bool leveledUp)> CompleteHabitAsync(Habit habit);
+        Task<(int xpEarned, bool leveledUp, List<Badge> newBadges)> CompleteHabitAsync(Habit habit);
         Task<List<Badge>> GetBadgesAsync();
     }
 }

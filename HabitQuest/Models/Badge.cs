@@ -11,9 +11,13 @@ namespace HabitQuest.Models
         public BadgeDefinition Definition { get; set; } = null!;
         public bool IsEarned { get; set; }
         public DateTime? EarnedAt { get; set; }
+        public double Progress { get; set; }
 
         public string Icon => Definition.Icon;
         public string Name => Definition.Name;
         public string Description => Definition.Description;
+        public string ProgressLabel => IsEarned
+        ? "Отримано ✅"
+        : $"{(int)(Progress * 100)}%";
     }
 }
