@@ -34,6 +34,7 @@ namespace HabitQuest
             builder.Services.AddTransient<DashboardPage>();
             builder.Services.AddTransient<HabitsPage>();
             builder.Services.AddTransient<ProfilePage>();
+            builder.Services.AddTransient<HabitLibraryPage>();
 
 #if DEBUG
             builder.Logging.AddDebug();

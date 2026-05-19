@@ -79,7 +79,7 @@ namespace HabitQuest.ViewModels
 
             if (result == "📚 З бібліотеки")
             {
-                // TODO: відкрити бібліотеку
+                OpenAddHabitRequested?.Invoke(this, true);
             }
             else if (result == "✏️ Власна звичка")
             {

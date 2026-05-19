@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:HabitQuest.ViewModels"
+    x:Class="HabitQuest.Views.HabitLibraryPage"
+    x:DataType="vm:HabitLibraryViewModel"
+    Shell.NavBarIsVisible="False">
+
+    <Grid RowDefinitions="Auto,Auto,*,Auto">
+
+        <HorizontalStackLayout
+            Grid.Row="0"
+            Padding="20,50,20,16"
+            Spacing="12"
+            BackgroundColor="#6C63FF">
+            <Button
+                Text="✕"
+                BackgroundColor="Transparent"
+                TextColor="White"
+                FontSize="20"
+                Command="{Binding CloseCommand}"/>
+            <Label
+                Text="Бібліотека звичок"
+                FontSize="22"
+                FontAttributes="Bold"
+                TextColor="White"
+                VerticalOptions="Center"/>
+        </HorizontalStackLayout>
+
+        <ScrollView
+            Grid.Row="1"
+            Orientation="Horizontal"
+            Padding="16,12"
+            BackgroundColor="#6C63FF">
+            <HorizontalStackLayout Spacing="8" BindableLayout.ItemsSource="{Binding FilterCategories}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="{x:Type x:String}">
+                        <Border
+                            Padding="16,8"
+                            StrokeThickness="0">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="20"/>
+                            </Border.StrokeShape>
+                            <Border.BackgroundColor>
+                                <Binding>
+                                    <!--<Binding.Converter>
+                                        <converters:StringEqualToColorConverter
+                                            TrueColor="White"
+                                            FalseColor="#5A52E0"/>
+                                    </Binding.Converter>-->
+                                </Binding>
+                            </Border.BackgroundColor>
+                            <Label
+                                Text="{Binding .}"
+                                FontSize="14"
+                                TextColor="{Binding Source={RelativeSource AncestorType={x:Type vm:HabitLibraryViewModel}}, Path=SelectedCategory, Converter={StaticResource StringEqualToTextColorConverter}}"/>
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:HabitLibraryViewModel}}, Path=SelectCategoryCommand}"
+                                    CommandParameter="{Binding .}"/>
+                            </Border.GestureRecognizers>
+                        </Border>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </HorizontalStackLayout>
+        </ScrollView>
+
+        <CollectionView
+            Grid.Row="2"
+            ItemsSource="{Binding Templates}"
+            Margin="16,8">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="vm:HabitItemViewModel">
+                    <Border
+                        Margin="0,0,0,10"
+                        Padding="16"
+                        BackgroundColor="White"
+                        StrokeThickness="1"
+                        Stroke="#F0F0F0">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="16"/>
+                        </Border.StrokeShape>
+                        <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="12">
+
+                            <Label
+                                Grid.Column="0"
+                                Text="{Binding CategoryIcon}"
+                                FontSize="28"
+                                VerticalOptions="Center"/>
+
+                            <VerticalStackLayout Grid.Column="1" Spacing="2" VerticalOptions="Center">
+                                <Label
+                                    Text="{Binding Name}"
+                                    FontSize="16"
+                                    FontAttributes="Bold"
+                                    TextColor="#1A1A2E"/>
+                                <Label
+                                    Text="{Binding DifficultyLabel}"
+                                    FontSize="12"
+                                    TextColor="#888"/>
+                            </VerticalStackLayout>
+
+                            <Button
+                                Grid.Column="2"
+                                Text="+"
+                                FontSize="22"
+                                BackgroundColor="#6C63FF"
+                                TextColor="White"
+                                CornerRadius="20"
+                                HeightRequest="40"
+                                WidthRequest="40"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type vm:HabitLibraryViewModel}}, Path=SelectTemplateCommand}"
+                                CommandParameter="{Binding .}"
+                                VerticalOptions="Center"/>
+
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </Grid>
+
+</ContentPage>

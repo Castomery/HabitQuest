@@ -8,14 +8,12 @@
 
     <VerticalStackLayout Padding="24,16" Spacing="16" WidthRequest="400">
 
-        <!-- Заголовок -->
         <Label
             Text="{Binding Title}"
             FontSize="22"
             FontAttributes="Bold"
             TextColor="#1A1A2E"/>
 
-        <!-- Назва -->
         <VerticalStackLayout Spacing="6">
             <Label Text="Назва" FontSize="14" TextColor="#888"/>
             <Border Stroke="#E0E0E0" StrokeThickness="1" Padding="12,0">
@@ -31,7 +29,6 @@
             </Border>
         </VerticalStackLayout>
 
-        <!-- Категорія -->
         <VerticalStackLayout Spacing="6">
             <Label Text="Категорія" FontSize="14" TextColor="#888"/>
             <Picker
@@ -40,7 +37,6 @@
                 FontSize="16"/>
         </VerticalStackLayout>
 
-        <!-- Складність -->
         <VerticalStackLayout Spacing="6">
             <Label Text="Складність" FontSize="14" TextColor="#888"/>
             <HorizontalStackLayout Spacing="8">
@@ -71,7 +67,6 @@
             </HorizontalStackLayout>
         </VerticalStackLayout>
 
-        <!-- Дні тижня -->
         <VerticalStackLayout Spacing="6">
             <Label Text="Дні тижня" FontSize="14" TextColor="#888"/>
             <HorizontalStackLayout Spacing="6">
@@ -106,7 +101,6 @@
             </HorizontalStackLayout>
         </VerticalStackLayout>
 
-        <!-- Кнопка зберегти -->
         <Button
             Text="{Binding SaveButtonText}"
             Command="{Binding SaveCommand}"

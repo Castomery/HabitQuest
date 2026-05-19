@@ -14,20 +14,27 @@ public partial class HabitsPage : ContentPage
         _viewModel = viewModel;
         _serviceProvider = serviceProvider;
         BindingContext = viewModel;
-
         _viewModel.OpenAddHabitRequested += OnOpenAddHabitRequested;
-    }
-
-    private async void OnOpenAddHabitRequested(object? sender, bool fromLibrary)
-    {
-        var viewModel = _serviceProvider.GetRequiredService<AddEditHabitViewModel>();
-        var popup = new AddEditHabitBottomSheet(viewModel);
-        await this.ShowPopupAsync(popup);
     }
 
     protected override async void OnAppearing()
     {
         base.OnAppearing();
         await _viewModel.LoadAsync();
+    }
+    private async void OnOpenAddHabitRequested(object? sender, bool fromLibrary)
+    {
+        if (fromLibrary)
+        {
+            var viewModel = _serviceProvider.GetRequiredService<HabitLibraryViewModel>();
+            var page = new HabitLibraryPage(viewModel);
+            await Navigation.PushModalAsync(page);
+        }
+        else
+        {
+            var viewModel = _serviceProvider.GetRequiredService<AddEditHabitViewModel>();
+            var page = new AddEditHabitBottomSheet(viewModel);
+            await this.ShowPopupAsync(page);
+        }
     }
 }

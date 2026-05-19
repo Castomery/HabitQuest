@@ -3,54 +3,82 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CommunityToolkit.Maui.Alerts;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using CommunityToolkit.Mvvm.Messaging;
 using HabitQuest.Data;
+using HabitQuest.Interfaces;
+using HabitQuest.Messages;
 using HabitQuest.Models;
 
 namespace HabitQuest.ViewModels
 {
     public partial class HabitLibraryViewModel : ObservableObject
     {
-        [ObservableProperty]
-        private List<string> _categories = new();
+        private readonly IHabitService _habitService;
 
         [ObservableProperty]
-        private string _selectedCategory = string.Empty;
+        private List<string> _filterCategories = new();
 
         [ObservableProperty]
-        private List<Habit> _templates = new();
+        private string _selectedCategory = "Всі";
 
-        public Habit? SelectedTemplate { get; private set; }
+        [ObservableProperty]
+        private List<HabitItemViewModel> _templates = new();
 
-        public HabitLibraryViewModel()
+        public event EventHandler? CloseRequested;
+
+        public HabitLibraryViewModel(IHabitService habitService)
         {
-            Categories = HabitTemplates.GetCategories();
-            SelectedCategory = Categories.FirstOrDefault() ?? string.Empty;
+            _habitService = habitService;
+
+            FilterCategories = new List<string> { "Всі" }
+                .Concat(HabitTemplates.GetCategories())
+                .ToList();
+
             LoadTemplates();
         }
 
-        partial void OnSelectedCategoryChanged(string value)
-        {
-            LoadTemplates();
-        }
+        partial void OnSelectedCategoryChanged(string value) => LoadTemplates();
 
         private void LoadTemplates()
         {
-            Templates = HabitTemplates.GetByCategory(SelectedCategory);
+            var habits = SelectedCategory == "Всі"
+                ? HabitTemplates.All
+                : HabitTemplates.GetByCategory(SelectedCategory);
+
+            Templates = habits.Select(h => new HabitItemViewModel(h, false)).ToList();
         }
 
         [RelayCommand]
-        public void SelectTemplate(Habit template)
+        public void SelectCategory(string category)
         {
-            SelectedTemplate = new Habit
+            SelectedCategory = category;
+        }
+
+        [RelayCommand]
+        public async Task SelectTemplateAsync(HabitItemViewModel item)
+        {
+            var habit = new Habit
             {
-                Name = template.Name,
-                Category = template.Category,
-                Difficulty = template.Difficulty,
-                DaysOfWeek = template.DaysOfWeek,
+                Name = item.Habit.Name,
+                Category = item.Habit.Category,
+                Difficulty = item.Habit.Difficulty,
+                DaysOfWeek = item.Habit.DaysOfWeek,
                 IsFromTemplate = true
             };
+
+            await _habitService.SaveHabitAsync(habit);
+            WeakReferenceMessenger.Default.Send(new HabitSavedMessage());
+            await Toast.Make($"«{habit.Name}» додано ✅").Show();
+            CloseRequested?.Invoke(this, EventArgs.Empty);
+        }
+
+        [RelayCommand]
+        public void Close()
+        {
+            CloseRequested?.Invoke(this, EventArgs.Empty);
         }
     }
 }
