@@ -14,6 +14,10 @@
             </ResourceDictionary.MergedDictionaries>
 
             <converters:BoolToColorConverter x:Key="BoolToColorConverter"/>
+            <converters:DifficultyToColorConverter x:Key="DifficultyToColorConverter"/>
+            <converters:DayToColorConverter x:Key="DayToColorConverter"/>
+            <converters:DayToTextColorConverter x:Key="DayToTextColorConverter"/>
+            <converters:DifficultyToTextColorConverter x:Key="DifficultyToTextColorConverter"/>
             <toolkit:InvertedBoolConverter x:Key="InvertedBoolConverter"/>
         </ResourceDictionary>
     </Application.Resources>

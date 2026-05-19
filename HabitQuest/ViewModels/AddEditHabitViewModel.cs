@@ -32,6 +32,8 @@ namespace HabitQuest.ViewModels
         [ObservableProperty]
         private List<DayOfWeek> _selectedDays = new();
 
+        public event EventHandler? CloseRequested;
+
         public bool IsEditing => _existingHabit is not null;
         public string Title => IsEditing ? "Редагувати звичку" : "Нова звичка";
         public string SaveButtonText => IsEditing ? "Зберегти" : "Додати";
@@ -66,12 +68,22 @@ namespace HabitQuest.ViewModels
         }
 
         [RelayCommand]
-        public void ToggleDay(DayOfWeek day)
+        public void SetDifficulty(string difficulty)
         {
-            if (SelectedDays.Contains(day))
-                SelectedDays = SelectedDays.Where(d => d != day).ToList();
-            else
-                SelectedDays = SelectedDays.Append(day).ToList();
+            if (Enum.TryParse<Difficulty>(difficulty, out var result))
+                Difficulty = result;
+        }
+
+        [RelayCommand]
+        public void ToggleDay(string dayString)
+        {
+            if (Enum.TryParse<DayOfWeek>(dayString, out var day))
+            {
+                if (SelectedDays.Contains(day))
+                    SelectedDays = SelectedDays.Where(d => d != day).ToList();
+                else
+                    SelectedDays = SelectedDays.Append(day).ToList();
+            }
         }
 
         [RelayCommand]
@@ -100,6 +112,8 @@ namespace HabitQuest.ViewModels
             WeakReferenceMessenger.Default.Send(new HabitSavedMessage());
 
             await Toast.Make(IsEditing ? "Звичку оновлено ✅" : "Звичку додано ✅").Show();
+
+            CloseRequested?.Invoke(this, EventArgs.Empty);
         }
     }
 }

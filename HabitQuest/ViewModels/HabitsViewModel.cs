@@ -4,12 +4,14 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CommunityToolkit.Maui.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.Messaging;
 using HabitQuest.Interfaces;
 using HabitQuest.Messages;
 using HabitQuest.Models;
+using HabitQuest.Views;
 
 namespace HabitQuest.ViewModels
 {
@@ -25,6 +27,8 @@ namespace HabitQuest.ViewModels
 
         [ObservableProperty]
         private bool _isEmpty;
+
+        public event EventHandler<bool>? OpenAddHabitRequested;
 
         public HabitsViewModel(IHabitService habitService)
         {
@@ -79,7 +83,7 @@ namespace HabitQuest.ViewModels
             }
             else if (result == "✏️ Власна звичка")
             {
-                // TODO: відкрити форму
+                OpenAddHabitRequested?.Invoke(this, false);
             }
         }
 

@@ -8,8 +8,13 @@ namespace HabitQuest
         public App(IDatabaseService databaseService)
         {
             InitializeComponent();
-            InitializeDatabaseAsync(databaseService).ConfigureAwait(false);
-            MainPage = new AppShell();
+            MainPage = new ContentPage();
+
+            Dispatcher.Dispatch(async () =>
+            {
+                await databaseService.InitAsync();
+                MainPage = new AppShell();
+            });
         }
 
         private static async Task InitializeDatabaseAsync(IDatabaseService databaseService)

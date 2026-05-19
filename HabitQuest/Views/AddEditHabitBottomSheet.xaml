@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:vm="clr-namespace:HabitQuest.ViewModels"
+    x:Class="HabitQuest.Views.AddEditHabitBottomSheet">
+
+    <VerticalStackLayout Padding="24,16" Spacing="16" WidthRequest="400">
+
+        <!-- Заголовок -->
+        <Label
+            Text="{Binding Title}"
+            FontSize="22"
+            FontAttributes="Bold"
+            TextColor="#1A1A2E"/>
+
+        <!-- Назва -->
+        <VerticalStackLayout Spacing="6">
+            <Label Text="Назва" FontSize="14" TextColor="#888"/>
+            <Border Stroke="#E0E0E0" StrokeThickness="1" Padding="12,0">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="12"/>
+                </Border.StrokeShape>
+                <Entry
+                    Text="{Binding Name}"
+                    Placeholder="Наприклад: Читати 20 хв"
+                    PlaceholderColor="#6d6d6d"
+                    FontSize="16"
+                    HeightRequest="48"/>
+            </Border>
+        </VerticalStackLayout>
+
+        <!-- Категорія -->
+        <VerticalStackLayout Spacing="6">
+            <Label Text="Категорія" FontSize="14" TextColor="#888"/>
+            <Picker
+                ItemsSource="{Binding Categories}"
+                SelectedItem="{Binding Category}"
+                FontSize="16"/>
+        </VerticalStackLayout>
+
+        <!-- Складність -->
+        <VerticalStackLayout Spacing="6">
+            <Label Text="Складність" FontSize="14" TextColor="#888"/>
+            <HorizontalStackLayout Spacing="8">
+                <Button
+                    Text="😊 Легка"
+                    Command="{Binding SetDifficultyCommand}"
+                    CommandParameter="Easy"
+                    BackgroundColor="{Binding Difficulty, Converter={StaticResource DifficultyToColorConverter}, ConverterParameter=Easy}"
+                    TextColor="{Binding Difficulty, Converter={StaticResource DifficultyToTextColorConverter}, ConverterParameter=Easy}"
+                    CornerRadius="20"
+                    FontSize="13"/>
+                <Button
+                    Text="💪 Середня"
+                    Command="{Binding SetDifficultyCommand}"
+                    CommandParameter="Medium"
+                    BackgroundColor="{Binding Difficulty, Converter={StaticResource DifficultyToColorConverter}, ConverterParameter=Medium}"
+                    TextColor="{Binding Difficulty, Converter={StaticResource DifficultyToTextColorConverter}, ConverterParameter=Medium}"
+                    CornerRadius="20"
+                    FontSize="13"/>
+                <Button
+                    Text="🔥 Важка"
+                    Command="{Binding SetDifficultyCommand}"
+                    CommandParameter="Hard"
+                    BackgroundColor="{Binding Difficulty, Converter={StaticResource DifficultyToColorConverter}, ConverterParameter=Hard}"
+                     TextColor="{Binding Difficulty, Converter={StaticResource DifficultyToTextColorConverter}, ConverterParameter=Hard}"
+                    CornerRadius="20"
+                    FontSize="13"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+        <!-- Дні тижня -->
+        <VerticalStackLayout Spacing="6">
+            <Label Text="Дні тижня" FontSize="14" TextColor="#888"/>
+            <HorizontalStackLayout Spacing="6">
+                <Button Text="Пн" Command="{Binding ToggleDayCommand}" CommandParameter="Monday"
+                        CornerRadius="20" HeightRequest="40" WidthRequest="40" FontSize="12"
+                        BackgroundColor="{Binding SelectedDays, Converter={StaticResource DayToColorConverter}, ConverterParameter=Monday}"
+                        TextColor="{Binding SelectedDays, Converter={StaticResource DayToTextColorConverter}, ConverterParameter=Monday}"/>
+                <Button Text="Вт" Command="{Binding ToggleDayCommand}" CommandParameter="Tuesday"
+                        CornerRadius="20" HeightRequest="40" WidthRequest="40" FontSize="12"
+                        BackgroundColor="{Binding SelectedDays, Converter={StaticResource DayToColorConverter}, ConverterParameter=Tuesday}"
+                        TextColor="{Binding SelectedDays, Converter={StaticResource DayToTextColorConverter}, ConverterParameter=Tuesday}"/>
+                <Button Text="Ср" Command="{Binding ToggleDayCommand}" CommandParameter="Wednesday"
+                        CornerRadius="20" HeightRequest="40" WidthRequest="40" FontSize="12"
+                        BackgroundColor="{Binding SelectedDays, Converter={StaticResource DayToColorConverter}, ConverterParameter=Wednesday}"
+                        TextColor="{Binding SelectedDays, Converter={StaticResource DayToTextColorConverter}, ConverterParameter=Wednesday}"/>
+                <Button Text="Чт" Command="{Binding ToggleDayCommand}" CommandParameter="Thursday"
+                        CornerRadius="20" HeightRequest="40" WidthRequest="40" FontSize="12"
+                        BackgroundColor="{Binding SelectedDays, Converter={StaticResource DayToColorConverter}, ConverterParameter=Thursday}"
+                        TextColor="{Binding SelectedDays, Converter={StaticResource DayToTextColorConverter}, ConverterParameter=Thursday}"/>
+                <Button Text="Пт" Command="{Binding ToggleDayCommand}" CommandParameter="Friday"
+                        CornerRadius="20" HeightRequest="40" WidthRequest="40" FontSize="12"
+                        BackgroundColor="{Binding SelectedDays, Converter={StaticResource DayToColorConverter}, ConverterParameter=Friday}"
+                        TextColor="{Binding SelectedDays, Converter={StaticResource DayToTextColorConverter}, ConverterParameter=Friday}"/>
+                <Button Text="Сб" Command="{Binding ToggleDayCommand}" CommandParameter="Saturday"
+                        CornerRadius="20" HeightRequest="40" WidthRequest="40" FontSize="12"
+                        BackgroundColor="{Binding SelectedDays, Converter={StaticResource DayToColorConverter}, ConverterParameter=Saturday}"
+                        TextColor="{Binding SelectedDays, Converter={StaticResource DayToTextColorConverter}, ConverterParameter=Saturday}"/>
+                <Button Text="Нд" Command="{Binding ToggleDayCommand}" CommandParameter="Sunday"
+                        CornerRadius="20" HeightRequest="40" WidthRequest="40" FontSize="12"
+                        BackgroundColor="{Binding SelectedDays, Converter={StaticResource DayToColorConverter}, ConverterParameter=Sunday}"
+                        TextColor="{Binding SelectedDays, Converter={StaticResource DayToTextColorConverter}, ConverterParameter=Sunday}"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+        <!-- Кнопка зберегти -->
+        <Button
+            Text="{Binding SaveButtonText}"
+            Command="{Binding SaveCommand}"
+            BackgroundColor="#6C63FF"
+            TextColor="White"
+            FontSize="16"
+            FontAttributes="Bold"
+            HeightRequest="54"
+            CornerRadius="27"
+            Margin="0,8,0,0"/>
+
+    </VerticalStackLayout>
+
+</toolkit:Popup>

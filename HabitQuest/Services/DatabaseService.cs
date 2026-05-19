@@ -45,10 +45,15 @@ namespace HabitQuest.Services
         public Task<int> SaveLogAsync(HabitLog log) =>
         _db.InsertAsync(log);
 
-        public Task<List<HabitLog>> GetLogsForTodayAsync() =>
-            _db.Table<HabitLog>()
-               .Where(l => l.CompletedAt.Date == DateTime.Today)
-               .ToListAsync();
+        public async Task<List<HabitLog>> GetLogsForTodayAsync()
+        {
+            var today = DateTime.Today;
+            var tomorrow = today.AddDays(1);
+
+            return await _db.Table<HabitLog>()
+                .Where(l => l.CompletedAt >= today && l.CompletedAt < tomorrow)
+                .ToListAsync();
+        }
 
         public Task<List<HabitLog>> GetLogsForHabitAsync(int habitId) =>
             _db.Table<HabitLog>()
