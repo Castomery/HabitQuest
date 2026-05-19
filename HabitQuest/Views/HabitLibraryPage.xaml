@@ -42,19 +42,19 @@
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="20"/>
                             </Border.StrokeShape>
-                            <Border.BackgroundColor>
+                            <!--<Border.BackgroundColor>
                                 <Binding>
-                                    <!--<Binding.Converter>
+                                    --><!--<Binding.Converter>
                                         <converters:StringEqualToColorConverter
                                             TrueColor="White"
                                             FalseColor="#5A52E0"/>
-                                    </Binding.Converter>-->
+                                    </Binding.Converter>--><!--
                                 </Binding>
-                            </Border.BackgroundColor>
-                            <Label
+                            </Border.BackgroundColor>-->
+                            <!--<Label
                                 Text="{Binding .}"
                                 FontSize="14"
-                                TextColor="{Binding Source={RelativeSource AncestorType={x:Type vm:HabitLibraryViewModel}}, Path=SelectedCategory, Converter={StaticResource StringEqualToTextColorConverter}}"/>
+                                TextColor="{Binding Source={RelativeSource AncestorType={x:Type vm:HabitLibraryViewModel}}, Path=SelectedCategory, Converter={StaticResource StringEqualToTextColorConverter}}"/>-->
                             <Border.GestureRecognizers>
                                 <TapGestureRecognizer
                                     Command="{Binding Source={RelativeSource AncestorType={x:Type vm:HabitLibraryViewModel}}, Path=SelectCategoryCommand}"

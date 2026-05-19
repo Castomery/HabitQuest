@@ -1,4 +1,5 @@
 using CommunityToolkit.Maui.Views;
+using HabitQuest.Interfaces;
 using HabitQuest.ViewModels;
 
 namespace HabitQuest.Views;
@@ -15,6 +16,7 @@ public partial class HabitsPage : ContentPage
         _serviceProvider = serviceProvider;
         BindingContext = viewModel;
         _viewModel.OpenAddHabitRequested += OnOpenAddHabitRequested;
+        _viewModel.EditHabitRequested += OnEditHabitRequested;
     }
 
     protected override async void OnAppearing()
@@ -36,5 +38,12 @@ public partial class HabitsPage : ContentPage
             var page = new AddEditHabitBottomSheet(viewModel);
             await this.ShowPopupAsync(page);
         }
+    }
+
+    private async void OnEditHabitRequested(object? sender, HabitItemViewModel item)
+    {
+        var viewModel = new AddEditHabitViewModel(_serviceProvider.GetRequiredService<IHabitService>(), item.Habit);
+        var page = new AddEditHabitBottomSheet(viewModel);
+        await this.ShowPopupAsync(page);
     }
 }

@@ -29,6 +29,8 @@ namespace HabitQuest.ViewModels
         [ObservableProperty]
         private string _greetingMessage = string.Empty;
 
+        public bool IsEmpty => _todayHabits.Any();
+
         public DashboardViewModel(IHabitService habitService, IGameService gameService)
         {
             _habitService = habitService;

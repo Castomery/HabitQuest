@@ -90,7 +90,7 @@
                     Text="Звички на сьогодні"
                     FontSize="20"
                     FontAttributes="Bold"
-                    TextColor="#1A1A2E"/>
+                    TextColor="White"/>
 
                 <VerticalStackLayout
                     IsVisible="{Binding IsEmpty}"
@@ -167,7 +167,7 @@
                                         <Label
                                             Text="✓"
                                             FontSize="18"
-                                            TextColor="{Binding IsCompleted, Converter={StaticResource BoolToTextColorConverter}}"
+                                            TextColor="{Binding IsCompleted, Converter={StaticResource BoolToColorConverter}}"
                                             HorizontalOptions="Center"
                                             VerticalOptions="Center"/>
                                         <Border.GestureRecognizers>

@@ -29,6 +29,7 @@ namespace HabitQuest.ViewModels
         private bool _isEmpty;
 
         public event EventHandler<bool>? OpenAddHabitRequested;
+        public event EventHandler<HabitItemViewModel>? EditHabitRequested;
 
         public HabitsViewModel(IHabitService habitService)
         {
@@ -85,6 +86,12 @@ namespace HabitQuest.ViewModels
             {
                 OpenAddHabitRequested?.Invoke(this, false);
             }
+        }
+
+        [RelayCommand]
+        public void EditHabit(HabitItemViewModel item)
+        {
+            EditHabitRequested?.Invoke(this, item);
         }
 
         //[RelayCommand]
