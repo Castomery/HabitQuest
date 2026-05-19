@@ -1,12 +1,202 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="HabitQuest.Views.ProfilePage"
-             Title="ProfilePage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:HabitQuest.ViewModels"
+    xmlns:models="clr-namespace:HabitQuest.Models"
+    x:Class="HabitQuest.Views.ProfilePage"
+    x:DataType="vm:ProfileViewModel"
+    Shell.NavBarIsVisible="False">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="0">
+
+            <!-- Шапка -->
+            <VerticalStackLayout
+                BackgroundColor="#6C63FF"
+                Padding="20,50,20,30"
+                Spacing="12">
+
+                <!-- Аватар -->
+                <Border
+                    HeightRequest="90"
+                    WidthRequest="90"
+                    HorizontalOptions="Center"
+                    BackgroundColor="#5A52E0"
+                    StrokeThickness="0">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="45"/>
+                    </Border.StrokeShape>
+                    <Label
+                        Text="{Binding AvatarEmoji}"
+                        FontSize="40"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"/>
+                </Border>
+
+                <!-- Рівень -->
+                <Label
+                    Text="{Binding LevelTitle}"
+                    TextColor="White"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"/>
+
+                <!-- XP -->
+                <VerticalStackLayout Spacing="4">
+                    <Label
+                        TextColor="#E0DEFF"
+                        FontSize="13"
+                        HorizontalOptions="Center">
+                        <Label.Text>
+                            <MultiBinding StringFormat="{}{0} / {1} XP">
+                                <Binding Path="Profile.TotalXp"/>
+                                <Binding Path="Profile.XpForNextLevel"/>
+                            </MultiBinding>
+                        </Label.Text>
+                    </Label>
+                    <ProgressBar
+                        Progress="{Binding Profile.LevelProgress}"
+                        ProgressColor="White"
+                        BackgroundColor="#5A52E0"
+                        HeightRequest="8"/>
+                </VerticalStackLayout>
+
+            </VerticalStackLayout>
+
+            <!-- Статистика -->
+            <Grid
+                ColumnDefinitions="*,*"
+                Padding="20,20"
+                ColumnSpacing="12">
+
+                <Border
+                    Grid.Column="0"
+                    Padding="16"
+                    BackgroundColor="White"
+                    StrokeThickness="1"
+                    Stroke="#F0F0F0">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="16"/>
+                    </Border.StrokeShape>
+                    <VerticalStackLayout Spacing="4" HorizontalOptions="Center">
+                        <Label
+                            Text="🔥"
+                            FontSize="28"
+                            HorizontalOptions="Center"/>
+                        <Label
+                            Text="{Binding Profile.CurrentStreak}"
+                            FontSize="24"
+                            FontAttributes="Bold"
+                            TextColor="#1A1A2E"
+                            HorizontalOptions="Center"/>
+                        <Label
+                            Text="Поточний streak"
+                            FontSize="12"
+                            TextColor="#888"
+                            HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border
+                    Grid.Column="1"
+                    Padding="16"
+                    BackgroundColor="White"
+                    StrokeThickness="1"
+                    Stroke="#F0F0F0">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="16"/>
+                    </Border.StrokeShape>
+                    <VerticalStackLayout Spacing="4" HorizontalOptions="Center">
+                        <Label
+                            Text="📊"
+                            FontSize="28"
+                            HorizontalOptions="Center"/>
+                        <Label
+                            Text="{Binding TotalCompletions}"
+                            FontSize="24"
+                            FontAttributes="Bold"
+                            TextColor="#1A1A2E"
+                            HorizontalOptions="Center"/>
+                        <Label
+                            Text="Всього виконань"
+                            FontSize="12"
+                            TextColor="#888"
+                            HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                </Border>
+
+            </Grid>
+
+            <!-- Бейджі -->
+            <VerticalStackLayout Padding="20,0,20,20" Spacing="12">
+                <Label
+                    Text="Бейджі"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    TextColor="#1A1A2E"/>
+
+                <CollectionView
+                    ItemsSource="{Binding Badges}">
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout
+                            Orientation="Vertical"
+                            Span="3"
+                            HorizontalItemSpacing="10"
+                            VerticalItemSpacing="10"/>
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="models:Badge">
+                            <Border
+                                Padding="12"
+                                BackgroundColor="White"
+                                StrokeThickness="1"
+                                Stroke="#F0F0F0">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="16"/>
+                                </Border.StrokeShape>
+                                <VerticalStackLayout Spacing="6" HorizontalOptions="Center">
+
+                                    <!-- Іконка -->
+                                    <Label
+                                        Text="{Binding Icon}"
+                                        FontSize="32"
+                                        HorizontalOptions="Center"
+                                        Opacity="{Binding IsEarned, Converter={StaticResource BoolToOpacityConverter}}"/>
+
+                                    <!-- Назва -->
+                                    <Label
+                                        Text="{Binding Name}"
+                                        FontSize="12"
+                                        FontAttributes="Bold"
+                                        TextColor="#1A1A2E"
+                                        HorizontalOptions="Center"
+                                        HorizontalTextAlignment="Center"/>
+
+                                    <!-- Прогрес або отримано -->
+                                    <Label
+                                        Text="{Binding ProgressLabel}"
+                                        FontSize="11"
+                                        TextColor="#888"
+                                        HorizontalOptions="Center"/>
+
+                                    <!-- Прогрес бар (тільки для неотриманих) -->
+                                    <ProgressBar
+                                        Progress="{Binding Progress}"
+                                        ProgressColor="#6C63FF"
+                                        BackgroundColor="#F0F0F0"
+                                        HeightRequest="4"
+                                        IsVisible="{Binding IsEarned, Converter={StaticResource InvertedBoolConverter}}"/>
+
+                                </VerticalStackLayout>
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
 </ContentPage>

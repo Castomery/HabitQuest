@@ -14,6 +14,7 @@ namespace HabitQuest.ViewModels
     public partial class ProfileViewModel : ObservableObject
     {
         private readonly IGameService _gameService;
+        private readonly IDatabaseService _databaseService;
 
         [ObservableProperty]
         private UserProfile _profile = new();
@@ -24,23 +25,37 @@ namespace HabitQuest.ViewModels
         [ObservableProperty]
         private bool _isLoading;
 
-        public ProfileViewModel(IGameService gameService)
+        [ObservableProperty]
+        private int _totalCompletions;
+
+        public string AvatarEmoji => Profile.Level switch
+        {
+            1 => "🌱",
+            2 => "📖",
+            3 => "💪",
+            4 => "⚔️",
+            5 => "👑",
+            _ => "🌱"
+        };
+
+        public ProfileViewModel(IGameService gameService, IDatabaseService databaseService)
         {
             _gameService = gameService;
+            _databaseService = databaseService;
         }
         partial void OnProfileChanged(UserProfile value)
         {
             OnPropertyChanged(nameof(LevelTitle));
+            OnPropertyChanged(nameof(AvatarEmoji));
         }
 
         [RelayCommand]
         public async Task LoadAsync()
         {
             IsLoading = true;
-
             Profile = await _gameService.GetProfileAsync();
             Badges = await _gameService.GetBadgesAsync();
-
+            TotalCompletions = await _databaseService.GetTotalLogsCountAsync();
             IsLoading = false;
         }
 
