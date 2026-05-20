@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CommunityToolkit.Maui.Alerts;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using HabitQuest.Interfaces;
 using HabitQuest.Models;
+using Plugin.LocalNotification;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace HabitQuest.ViewModels
@@ -15,6 +17,8 @@ namespace HabitQuest.ViewModels
     {
         private readonly IGameService _gameService;
         private readonly IDatabaseService _databaseService;
+        private readonly IHabitNotificationService _notificationService;
+
 
         [ObservableProperty]
         private UserProfile _profile = new();
@@ -28,6 +32,12 @@ namespace HabitQuest.ViewModels
         [ObservableProperty]
         private int _totalCompletions;
 
+        [ObservableProperty]
+        private bool _isNotificationEnabled;
+
+        [ObservableProperty]
+        private TimeSpan _notificationTime = new TimeSpan(9, 0, 0);
+
         public string AvatarEmoji => Profile.Level switch
         {
             1 => "🌱",
@@ -38,11 +48,45 @@ namespace HabitQuest.ViewModels
             _ => "🌱"
         };
 
-        public ProfileViewModel(IGameService gameService, IDatabaseService databaseService)
+        public ProfileViewModel(IGameService gameService, IDatabaseService databaseService, IHabitNotificationService notificationService)
         {
             _gameService = gameService;
             _databaseService = databaseService;
+
+            _notificationService = notificationService;
+
+            var savedTime = _notificationService.GetScheduledTime();
+            IsNotificationEnabled = savedTime.HasValue;
+            if (savedTime.HasValue)
+                NotificationTime = savedTime.Value;
         }
+
+        public async Task ToggleNotificationAsync()
+        {
+            if (IsNotificationEnabled)
+            {
+                await _notificationService.RequestPermissionAsync();
+                await _notificationService.ScheduleDailyReminderAsync(NotificationTime);
+                await Toast.Make($"Нагадування встановлено на {NotificationTime:hh\\:mm} ✅").Show();
+            }
+            else
+            {
+                await _notificationService.CancelAllAsync();
+                await Toast.Make("Нагадування вимкнено").Show();
+            }
+        }
+
+        partial void OnNotificationTimeChanged(TimeSpan value)
+        {
+            if (IsNotificationEnabled)
+                _ = _notificationService.ScheduleDailyReminderAsync(value);
+        }
+
+        partial void OnIsNotificationEnabledChanged(bool value)
+        {
+            _ = ToggleNotificationAsync();
+        }
+
         partial void OnProfileChanged(UserProfile value)
         {
             OnPropertyChanged(nameof(LevelTitle));

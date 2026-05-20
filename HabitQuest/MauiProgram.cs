@@ -4,6 +4,7 @@ using HabitQuest.Services;
 using HabitQuest.ViewModels;
 using HabitQuest.Views;
 using Microsoft.Extensions.Logging;
+using Plugin.LocalNotification;
 
 namespace HabitQuest
 {
@@ -15,6 +16,7 @@ namespace HabitQuest
             builder
                 .UseMauiApp<App>()
                 .UseMauiCommunityToolkit()
+                .UseLocalNotification()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -24,6 +26,7 @@ namespace HabitQuest
             builder.Services.AddSingleton<IDatabaseService, DatabaseService>();
             builder.Services.AddSingleton<IHabitService, HabitService>();
             builder.Services.AddSingleton<IGameService, GameService>();
+            builder.Services.AddSingleton<IHabitNotificationService, NotificationService>();
 
             builder.Services.AddTransient<DashboardViewModel>();
             builder.Services.AddTransient<HabitsViewModel>();
